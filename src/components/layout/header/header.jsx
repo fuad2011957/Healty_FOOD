@@ -1,5 +1,6 @@
-import { HeaderMenu } from "../header/HeaderMenu.jsx";
-import { Logo } from "../ui/logo.jsx";
+import { HeaderMenu } from "./HeaderMenu.jsx";
+import { Logo } from "../ui/Logo.jsx";
+
 import { LogoSwicher } from "../ui/LogoSwicher.jsx";
 import { useEffect, useState } from "react";
 
