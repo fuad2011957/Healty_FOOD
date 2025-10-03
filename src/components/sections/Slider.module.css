@@ -1,0 +1,114 @@
+.sliderContainer {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 458px;
+  overflow: hidden;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px;
+  color: white;
+}
+
+.category {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.date {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.author {
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.info {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+}
+
+.views,
+.comments {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.arrows {
+  position: absolute;
+  top: 10%;
+  right: 20px;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.prevArrow,
+.nextArrow {
+  background: rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nextArrow:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.prevArrow {
+  /* Если нужна только одна стрелка, как на оригинальном снимке */
+  display: none; 
+}
