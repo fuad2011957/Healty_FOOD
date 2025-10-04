@@ -1,10 +1,10 @@
 import { HeaderMenu } from "./HeaderMenu.jsx";
-import { Logo } from "../ui/Logo.jsx";
 
 import { LogoSwicher } from "../ui/LogoSwicher.jsx";
 import { useEffect, useState } from "react";
+import { Logo } from "../ui/Logo.jsx";
 
-export default function Header() {
+function Header() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -31,3 +31,4 @@ export default function Header() {
     </header>
   );
 }
+export default Header;
